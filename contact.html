@@ -1,1 +1,60 @@
-<!doctype html> <html lang='en'> <head> <meta charset='utf-8'> <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'> <title>Contact · ERP Hulk</title> <meta name='description' content='Talk to the ERP Hulk team about your Zoho setup.'> <link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap'> <link rel='stylesheet' href='styles.css'> </head> <body> <header class='site-header'><div class='wrap'> <a class='logo' href='index.html'><span class='logo-mark'>ERP<span>HULK</span></span><span class='logo-tag'>ERP news, minus the noise</span></a> <nav class='nav' aria-label='Main'><a href='index.html'>Home</a><a href='news.html'>News & Insights</a><a href='about.html'>About</a><a class='nav-cta' href='contact.html' aria-current='page'>Talk to us</a></nav> </div></header> <main> <section class='page-head'><div class='wrap' style='display:grid;gap:14px'> <span class='eyebrow'>Talk to us</span> <h1>Tell us what's slowing you down</h1> <p class='lede'>A messy CRM, a month-end that never ends, payroll done by hand. Send us a few lines and we'll come back within one working day with a time for a free 30-minute call.</p> </div></section> <section><div class='wrap two-col'> <form class='form panel' data-demo='This form is not connected yet. Please message Flowpeak Consulting on LinkedIn for now.'> <label for='c-name'>Your name<input id='c-name' name='name' required autocomplete='name'></label> <label for='c-email'>Work email<input id='c-email' name='email' type='email' required autocomplete='email'></label> <label for='c-company'>Company and team size<input id='c-company' name='company' placeholder='e.g. Acme Traders, 45 people'></label> <label for='c-topic'>What's this about? <select id='c-topic' name='topic'> <option>Zoho CRM</option><option>Zoho Books or Inventory</option><option>Zoho People or Payroll</option><option>Zoho Creator or a custom app</option><option>Zoho One rollout</option><option>Something else</option> </select></label> <label for='c-msg'>What's going on?<textarea id='c-msg' name='message' placeholder='A couple of sentences is plenty.'></textarea></label> <button class='btn btn-primary' type='submit'>Send</button> <p class='form-note' aria-live='polite'></p> </form> <aside class='panel'> <h3>Other ways to reach us</h3> <dl> <div><dt>LinkedIn</dt><dd>Search “ERP Hulk” or Flowpeak Consulting</dd></div> <div><dt>Reply time</dt><dd>Within one working day</dd></div> </dl> </aside> </div></section> </main> <footer class='site-footer'><div class='wrap'> <p>ERP Hulk is written by the team at Flowpeak Consulting, a Zoho partner. We say so up front because we do implement this stuff for a living.</p> <p><a href='news.html'>News</a> · <a href='about.html'>About</a> · <a href='contact.html'>Contact</a> · © 2026 ERP Hulk</p> </div></footer> <script> document.querySelectorAll('form[data-demo]').forEach(function (f) { f.addEventListener('submit', function (e) { e.preventDefault(); var note = f.querySelector('.form-note') || f.parentElement.querySelector('.form-note'); if (note) note.textContent = f.getAttribute('data-demo'); f.reset(); }); }); var bar = document.querySelector('.filters'); if (bar) { bar.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; bar.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); }); var k = b.getAttribute('data-filter'); document.querySelectorAll('.list .story').forEach(function (s) { s.hidden = !(k === 'all' || s.getAttribute('data-pillar') === k); }); }); } </script> </body> </html> 
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Get help · ERP Hulk</title>
+<meta name="description" content="Talk to the person behind ERP Hulk about your Zoho Books, Inventory or ERP setup.">
+<link rel="canonical" href="https://www.erphulk.com/contact.html">
+<meta property="og:title" content="Get help · ERP Hulk">
+<meta property="og:description" content="Talk to the person behind ERP Hulk about your Zoho Books, Inventory or ERP setup.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="index.html"><span class="logo-mark">ERP<span>HULK</span></span><span class="logo-tag">ERP news, minus the noise</span></a>
+<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="news.html">ERP news</a><a href="about.html">About</a><a class="nav-cta" href="contact.html" aria-current="page">Get help</a></nav>
+</div></header>
+<main>
+<section class="page-head"><div class="wrap" style="display:grid;gap:14px">
+<span class="eyebrow">Get help</span>
+<h1>Stuck with your ERP?</h1>
+<p class="lede">Month-end that never ends, stock numbers that never match, or a move off Tally you keep putting off. ERP Hulk is written by Flowpeak Consulting, and that's where the hands-on help lives.</p>
+</div></section>
+<section><div class="wrap two-col">
+<div class="panel">
+<h3>Book a free 30-minute call</h3>
+<p style="margin:0;color:var(--muted)">Pick a time on Flowpeak's calendar. You'll talk to the person who writes these articles, about your setup, with no slides.</p>
+<a class="btn btn-primary" href="https://www.flowpeakconsulting.com/contact#book" style="justify-self:start">Book on flowpeakconsulting.com</a>
+</div>
+<aside class="panel">
+<h3>Other ways to reach us</h3>
+<dl>
+<div><dt>Email</dt><dd>hari@flowpeakconsulting.com</dd></div>
+<div><dt>News tip or correction</dt><dd>Same email. Put “Tip” in the subject.</dd></div>
+<div><dt>CRM question?</dt><dd><a href="https://crmimplementationpartners.com/">crmimplementationpartners.com</a></dd></div>
+</dl>
+</aside>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<p>ERP Hulk covers ERP only. It is written by Harikrishnan of <a href="https://www.flowpeakconsulting.com/">Flowpeak Consulting</a>, a Zoho partner, and we say so because we implement this stuff for a living. For CRM questions, see our sister site <a href="https://crmimplementationpartners.com/">CRM Implementation Partners</a>.</p>
+<p><a href="news.html">ERP news</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a> · © 2026 ERP Hulk</p>
+</div></footer>
+<script>
+var bar = document.querySelector(".filters");
+if (bar) {
+  bar.addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    bar.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+    var k = b.getAttribute("data-filter");
+    document.querySelectorAll(".list .story").forEach(function (s) {
+      s.hidden = !(k === "all" || s.getAttribute("data-pillar") === k);
+    });
+  });
+}
+</script>
+</body>
+</html>
